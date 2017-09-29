@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+}
+html, body {
+	height: 100%;
+  color: white;
+  position: relative;
+   line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+header .container-fluid {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 22px;
+  height: 80px;
+  text-align: right;
+}
+
+ #header.shrink{
+  height: 60px;
+  font-size: 20px;
+  -webkit-transition:all ease .5s;
+  -moz-transition:all ease .5s ;
+  -o-transition:all ease .5s;
+  transition:all ease .5s;
+}
+
+.navbar-inverse {
+    background:none; 
+    border: none;
+}
+ 
+.navbar-toggle, .navbar-toggle,
+.navbar-toggle, .navbar-toggle:after {
+   margin-left:20px;
+  }
+       
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin-right: 5%;
+}
+
+ .navbar-inverse .navbar-nav > li > a:hover,
+ .navbar-inverse .navbar-nav > li > a:focus  {
+  outline: none;
+}
+
+ .navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+  .navbar-inverse .navbar-nav > li {
+    margin-top: 0.5em;
+}
+#active  a{
+  color: #ff8400;
+ }
+  /*  collapsed navbar*/
+  @media screen and (max-width: 768px) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              -webkit-transition:.4s;
+              -moz-transition: .4;
+              -o-transition:.4s;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+              top:60px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              -webkit-transition:.4s;
+              -moz-transition: .4;
+              -o-transition:.4s;
+              transition:width .4s;
+              text-align: left;
+              background-color: rgba(0, 0, 0, 0.4);
+          }
+          .side-collapse.in {
+              width:0;
+          }
+          .navbar-inverse .navbar-nav > li > a{
+           color: white;
+          } 
+          header .container-fluid{
+            height: 60px;
+          }
+         /* .title h1{
+            font-size: 60px!important;
+          }
+          
+          .title p{
+          font-size: 20px!important;
+          }*/
+          }
+.intro-img{
+  text-align: center;
+  background-image:url(../reservations/reservations-bg.jpg); 
+  height: 400px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 400px;           
+  -moz-background-size:100% 400px;           
+  -o-background-size:100% 400px;           
+  background-size:  100% 400px;
+  background-attachment: fixed;
+ }
+/* because iphone safari doesnt go well with background-attachment:fixed*/
+@media screen and (max-width: 768px) {
+    .intro-img{
+    background-attachment: scroll;
+    }
+   }
+
+#reservations-title{
+  /* color: #ff8400;*/
+  color: white;
+   margin-top: 150px;
+   font-size: 51px;
+   font-family:'Lato', sans-serif;
+   text-align: center;
+   z-index: 2;
+ }
+.overlay{
+  width: 100%;
+  height: 400px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px){
+  #menu-title{
+ margin-top:100px;
+font-size: 36px;
+}
+}
+
+.reservations-text{
+  margin:50px 5% 0 5%;
+ }
+
+ .reservations-text h2{
+  font-size: 35px;
+  border-bottom: 7px solid #33b295;
+  margin-bottom: 50px;
+  display: inline-block;
+  padding-right: 60px;
+}
+
+
+/* event request */
+.event-request{
+  text-align: center;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  }
+
+
+ #request-title {
+  text-align: left;
+  font-size: 35px;
+  border-bottom: 7px solid #33b295;
+  margin-bottom: 50px;
+  display: inline-block;
+  padding-right: 60px;
+  margin: 50px 0 0 5%;
+ }
+.form-info{
+  display: inline;
+}
+
+.contact-input{
+  display: inline;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 1%;
+  height: 32px;
+  padding-left: 10px;
+  margin-bottom:10px;
+}
+
+.message{
+    margin-top: 5vh;
+}
+textarea{
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 1%;
+  height: 100px;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+.message-button{
+  float: right;
+  margin-top: 10px;
+  background-color: rgba(125,188,209,1);
+  height: 30px;
+  margin-left: 5px;
+  color: white; 
+}
+
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+  background-color: black;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+footer li{
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+footer li a {
+  color: white;
+}
+footer li a:hover{
+  color: #33b295;
+  outline: none;
+}
+footer li a:focus, a:after{
+outline: none;
+color: white;
+}
+footer li a:focus, a:after{
+  color: #33b295;
+}
+
+@media screen and (max-width: 768px){
+ #reservations-title{
+  font-size: 36px;
+ }
+ footer p{
+  text-align: center;
+ }
+ footer ul{
+  text-align: center;
+ }
+ footer li a {
+  margin-left: 30px;
+   }
+  }

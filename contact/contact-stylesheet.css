@@ -1,0 +1,310 @@
+*{
+	margin: 0;
+}
+html, body {
+	height: 100%;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+
+header .container-fluid {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 22px;
+  height: 80px;
+  text-align: right;
+}
+#header.shrink{
+  height: 60px;
+  font-size: 20px;
+  -webkit-transition:all ease .5s;
+  -moz-transition:all ease .5s ;
+  -o-transition:all ease .5s;
+  transition:all ease .5s;
+}
+.navbar-inverse {
+  background:none; 
+  border: none;
+}
+.navbar-toggle, .navbar-toggle,
+.navbar-toggle, .navbar-toggle:after {
+   margin-left:20px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin-right: 5%;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus  {
+  outline: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+.navbar-inverse .navbar-nav > li {
+  margin-top: 0.5em;
+}
+#active  a{
+  color: #ff8400;
+}
+  /*  collapsed navbar*/
+  @media screen and (max-width: 768px) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              -webkit-transition:.4s;
+              -moz-transition: .4;
+              -o-transition:.4s;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+              top:60px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              -webkit-transition:.4s;
+              -moz-transition: .4;
+              -o-transition:.4s;
+              transition:width .4s;
+              text-align: left;
+              background-color: rgba(0, 0, 0, 0.4);
+          }
+          .side-collapse.in {
+              width:0;
+          }
+          .navbar-inverse .navbar-nav > li > a{
+           color: white;
+          } 
+          header .container-fluid{
+            height: 60px;
+          }
+        }
+.intro-img{
+  text-align: center;
+  background-image:url(intro-contact.jpg); 
+  height: 400px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 400px;           
+  -moz-background-size:100% 400px;           
+  -o-background-size:100% 400px;           
+  background-size:  100% 400px; 
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 40px;
+}
+/* because iphone safari doesnt go well with background-attachment:fixed*/
+ @media screen and (max-width: 768px) {
+    .intro-img{
+    background-attachment: scroll;
+    }
+ }
+
+ /* text on intro image*/
+#menu-title{
+  color: white;
+  margin-top: 0px;
+  font-size: 51px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  z-index: 2;
+}
+.intro-img p{
+  margin-top: 120px;
+  font-family: "Merienda", sans-serif;
+  font-size: 34px;
+}
+.overlay {
+  width: 100%;
+  height: 400px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#contact-us{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+ font-family: "Merienda", sans-serif;
+ display: inline-block;
+ color: #33b295;
+ margin-bottom: 40px;
+}
+.map-section{
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.map-section p{
+  font-size: 22px;
+  color: #33b295;
+}
+#map-section-title{
+  font-family: "Merienda", sans-serif;
+  font-size: 28px;
+  margin-top: 30px;
+}
+.map-text{
+  margin-bottom: 40px;
+}
+#map {
+  height: 300px;
+  z-index: 1;
+  width: 63%;
+  margin-bottom: 50px;
+}
+.work-section{
+  height: 300px;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+ }
+.hours-time{
+  height: 300px;
+  text-align: center;
+  background-image: url(hours-time_bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;           
+  -moz-background-size:cover;           
+  -o-background-size: cover;           
+  background-size: cover;
+}
+.hours-time .overlay{
+  height: 300px;
+  background-color: rgba(51 , 178, 149, 0.5);
+}
+.hours-time div {
+  padding-top: 30px;
+ display: inline-block;
+ width: 100%;
+ margin-bottom: 20px;
+}
+#hours-time_title {
+  font-size: 22px;
+  display: inline-block;
+  width: 90%;
+}
+.hours-time li{
+  width: 100%;
+  display: inline-block;
+  padding-right: 10%;
+}
+.hours-time span.left{
+  float: left;
+  overflow: hidden;
+}
+.hours-time span.right {
+  float: right;
+  overflow: hidden;
+}
+.hours-time ul{
+  list-style-type: none;
+}
+.social-media{
+  background-color: #ff8400;
+  height: 300px;
+  text-align: center;
+  background-image: url(social-media_bg.jpg);
+ background-repeat: no-repeat;
+  -webkit-background-size: cover;           
+  -moz-background-size:cover;           
+  -o-background-size: cover;           
+  background-size: cover;
+}
+.social-media .overlay{
+  height: 300px;
+  background-color: rgba(255, 132, 0, 0.9);
+}
+.social-media div{
+ display: inline-block;
+ width: 100%;
+ margin-bottom: 20px;
+ padding-top: 30px;
+}
+.social-media p{
+  font-size: 22px;
+}
+.social-media ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+.social-media li{
+  display: inline;
+  width: 100%;
+}
+.social-media a{
+   margin-left: 30px;
+   color: white;
+}
+.social-media li a:hover{
+  color: #33b295;
+  outline: none;
+}
+.social-media li a:focus, a:after{
+outline: none;
+color: white;
+}
+/* footer*/
+footer {
+  text-align: center;
+  margin-bottom: 0;
+  background-color: black;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+footer p {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+footer li{
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+footer li a {
+  color: white;
+}
+footer li a:hover{
+  color: #33b295;
+  outline: none;
+}
+footer li a:focus, a:after{
+outline: none;
+color: white;
+}
+/* for mobile devices footer*/
+@media screen and (max-width: 768px){
+ #map{
+  width: 100%
+ }
+ footer p{
+  text-align: center;
+ }
+ footer ul{
+  text-align: center;
+ }
+ footer li a {
+  margin-left: 30px;
+   }
+  }
